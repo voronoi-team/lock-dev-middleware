@@ -1,0 +1,30 @@
+{
+    "name": "voronoi/lock-dev-middleware",
+    "description": "Laravel middleware to add HTTP Auth just to dev servers",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim Baker",
+            "email": "timbone945@gmail.com"
+        }
+    ],
+    "require": {
+    	"php": ">=7.1"
+    },
+    "require-dev": {
+	    "phpunit/phpunit": "^7.0",
+    	"orchestra/testbench": "~3.8.0"
+	 },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+    	"psr-4": {
+    		"Voronoi\\LockDev\\": "src/"
+    	}
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
